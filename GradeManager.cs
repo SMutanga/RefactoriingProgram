@@ -6,7 +6,7 @@ namespace RefactoringHomework
     {
         public double passingGrade = 50.0;
 
-        public void doWork()
+        public void LogGradeProcessingMessage()
         {
             Console.WriteLine("Working on grades...");
         }
