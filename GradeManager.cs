@@ -4,12 +4,13 @@ namespace RefactoringHomework
 {
     public class GradeManager
     {
-        public double passingGrade = 50.0;
+        private double passingGrade = 50.0;
 
         public void LogGradeProcessingMessage()
         {
             Console.WriteLine("Working on grades...");
         }
+
 
         public void processGrades(string studentName, double[] grades)
         {
@@ -18,6 +19,8 @@ namespace RefactoringHomework
             global::System.Double total = CalculateTotal(grades);
             CalculateAverage (grades, total);
         }
+
+
 
         private void CalculateAverage(global::System.Double[] grades, System.Double total)
         {
@@ -33,6 +36,8 @@ namespace RefactoringHomework
                 Console.WriteLine("Status: Fail");
             }
         }
+
+
 
         private static global::System.Double CalculateTotal(global::System.Double[] grades)
         {
