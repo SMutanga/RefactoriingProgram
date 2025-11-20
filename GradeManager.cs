@@ -6,6 +6,14 @@ namespace RefactoringHomework
     {
         private double passingGrade = 50.0;
 
+        public double PassingGrade
+        {
+            get { return passingGrade; }
+            set { passingGrade = value; }
+        }
+
+
+
         public void LogGradeProcessingMessage()
         {
             Console.WriteLine("Working on grades...");
