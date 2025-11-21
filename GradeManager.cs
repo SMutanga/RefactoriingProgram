@@ -60,7 +60,7 @@ namespace RefactoringHomework
             return total;
         }
 
-        public double calculateFinalGrade(double bonus, double average)
+        public double calculateFinalGrade(double average, double bonus)
         {
             return average + bonus;
         }
